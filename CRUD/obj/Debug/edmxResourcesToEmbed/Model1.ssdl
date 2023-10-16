@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CRUDModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="personel">
+    <Key>
+      <PropertyRef Name="KisiID" />
+    </Key>
+    <Property Name="KisiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KisiAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="KisiSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="KisiTC" Type="nvarchar" MaxLength="11" />
+    <Property Name="KisiTel" Type="nvarchar" MaxLength="11" />
+    <Property Name="KisiCinsiyet" Type="nvarchar" MaxLength="5" />
+    <Property Name="KisiDogumTarihi" Type="date" />
+    <Property Name="KisiDogumYeri" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="CRUDModelStoreContainer">
+    <EntitySet Name="personel" EntityType="Self.personel" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

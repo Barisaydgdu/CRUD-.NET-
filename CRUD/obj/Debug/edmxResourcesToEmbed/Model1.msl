@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CRUDModelStoreContainer" CdmEntityContainer="CRUDEntities">
+    <EntitySetMapping Name="personel">
+      <EntityTypeMapping TypeName="CRUDModel.personel">
+        <MappingFragment StoreEntitySet="personel">
+          <ScalarProperty Name="KisiID" ColumnName="KisiID" />
+          <ScalarProperty Name="KisiAd" ColumnName="KisiAd" />
+          <ScalarProperty Name="KisiSoyad" ColumnName="KisiSoyad" />
+          <ScalarProperty Name="KisiTC" ColumnName="KisiTC" />
+          <ScalarProperty Name="KisiTel" ColumnName="KisiTel" />
+          <ScalarProperty Name="KisiCinsiyet" ColumnName="KisiCinsiyet" />
+          <ScalarProperty Name="KisiDogumTarihi" ColumnName="KisiDogumTarihi" />
+          <ScalarProperty Name="KisiDogumYeri" ColumnName="KisiDogumYeri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
